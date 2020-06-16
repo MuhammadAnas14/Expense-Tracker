@@ -37,11 +37,7 @@
   top: 50%;
   left: 0;
   transform: translate(-100%,-50%);
-  opacity: 0;
+  opacity: 2;
   transition: opacity .3s ease;
-  display: none;
-}
-
-.del-but:hover {
-  display: block;
+  /* display: none; */
 }
