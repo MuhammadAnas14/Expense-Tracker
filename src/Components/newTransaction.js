@@ -1,26 +1,41 @@
-import React from 'react'
+import React, { useContext,useState } from 'react'
 import '../css/newTranactions.css'
-import {Container,Row,Col} from 'react-bootstrap'
+import {GlobalContext} from '../Context/MainState'
 
-const NewTransaction = props => {
+
+
+const NewTransaction = () => {
+
+  const [text, setText] = useState('');
+  const [amount, setAmount] = useState(0)
+
+  const {addTransaction} = useContext(GlobalContext);
+
+  const Submit = e => {
+    e.preventDefault();
+
+    const newTranactions = {
+      id : Math.floor(Math.random() * 10),
+      text,
+      amount : amount 
+    };
+    
+    addTransaction(newTranactions);
+  
+}
   return(
     <div>
       <h3 className= "tranactions">New Transactions</h3>
-      <form>
+      <form onSubmit= {Submit}> 
         <div className= "form-group">
           <h6>Text</h6>
-          <input className = "form-control" type = "text" placeholder= "enter Text" />
+          <input className = "form-control" type = "text" value = {text} onChange= {(e) => setText(e.target.value)} placeholder= "enter Text" />
         </div>
         <div className= "form-group">
           <h6>Amount</h6>
-          <input className = "form-control" type = "text" placeholder= "enter Amount" />
+          <input className = "form-control" type = "text" value = {amount} onChange= {(e) => setAmount(e.target.value)} placeholder= "enter Amount" />
         </div>
-        <Container>
-          <Row>
-            <Col><button className= "bttn">Expence</button></Col>
-            <Col><button className= "bttn">Income</button></Col>
-          </Row>
-        </Container>
+          <button className= "bttn">Income</button>
       </form>
     </div>
   )
