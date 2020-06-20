@@ -21,23 +21,32 @@
   margin: 10px 0;
 }
 
-.entries li.pls{
+.entries li.pos{
   border-bottom: 5px solid #e6241e;
 }
+
+.entries li.neg {
+  border-bottom: 5px solid #2ecc71;
+}
+
+
 
 .del-but{
   cursor: pointer;
   background-color: #e74c3c;
   border: 0;
-  color: black;
+  color: #fff;
   font-size: 20px;
   line-height: 20px;
   padding: 2px 5px;
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-100%,-50%);
-  opacity: 2;
-  transition: opacity .3s ease;
-  /* display: none; */
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.entries li:hover .del-btn {
+  opacity: 1;
 }
