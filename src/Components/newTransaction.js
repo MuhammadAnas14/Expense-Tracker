@@ -17,8 +17,9 @@ const NewTransaction = () => {
     const newTranactions = {
       id : Math.floor(Math.random() * 10),
       text,
-      amount : amount 
+      amount : +amount 
     };
+    console.log(newTranactions)
     
     addTransaction(newTranactions);
   

@@ -4,16 +4,20 @@ import Header from './Components/header'
 import Balance from  './Components/balance'
 import History from './Components/history'
 import NewTransaction from './Components/newTransaction'
+import { GlobalProvider } from './Context/MainState';
+
 
 function App() {
   return (
-    <div className= "App">
+    <div className = "App">
+    <GlobalProvider>
       <Header />
-      <div className= "container">
+        <div className= "container">
         <Balance />
         <History />
         <NewTransaction />
-      </div>
+        </div>
+    </GlobalProvider>
     </div>
   );
 }
