@@ -33,7 +33,7 @@
 
 .del-but{
   cursor: pointer;
-  background-color: #e74c3c;
+  background-color: #9b1708;
   border: 0;
   color: #fff;
   font-size: 20px;
@@ -45,6 +45,7 @@
   transform: translate(-100%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 5px;
 }
 
 .del-btn:focus {
@@ -52,6 +53,7 @@
 }
 
 .entries li.neg:hover .del-but {
+  background-color: #0a5329;
   opacity: 1;
 }
 
