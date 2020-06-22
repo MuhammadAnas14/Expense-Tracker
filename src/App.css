@@ -1,5 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 600px; 
+}
+
+.heading{
+  padding: 30px;
+}
 .App {
-  text-align: center;
+  text-align: left;
 }
 .main{
   margin: 30px auto;

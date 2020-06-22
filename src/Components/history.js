@@ -1,7 +1,8 @@
 import React,{useContext}from 'react'
-import '../css/history.css'
+
 import TransList from './historyList'
 import {GlobalContext} from '../Context/MainState'
+import '../css/history.css'
 
 
 const Header = props =>{

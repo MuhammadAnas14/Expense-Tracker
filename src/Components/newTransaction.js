@@ -34,7 +34,8 @@ const NewTransaction = () => {
         </div>
         <div className= "form-group">
           <h6>Amount</h6>
-          <input className = "form-control" type = "text" value = {amount} onChange= {(e) => setAmount(e.target.value)} placeholder= "enter Amount" />
+          <h6>(negative - expense, positive - income)</h6>
+          <input className = "form-control" type = "number" value = {amount} onChange= {(e) => setAmount(e.target.value)} placeholder= "enter Amount" />
         </div>
           <button className= "bttn">Income</button>
       </form>

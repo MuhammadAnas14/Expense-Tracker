@@ -23,11 +23,11 @@ const Balance = () => {
       <div className= "amount">
         <div>
           <h4>Income</h4>
-          <p>{income}</p>
+          <p className= "money pos">+${income}</p>
         </div>
         <div>
           <h4>Expence</h4>
-          <p>{expense}</p>
+          <p className= "money neg">-${expense}</p>
         </div>
       </div>
     </div>  

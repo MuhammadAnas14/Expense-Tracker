@@ -14,3 +14,23 @@
   text-align: center;
   box-sizing: border-box
 }
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.neg {
+  color: green;
+}
+
+.money.pos {
+  color: red;
+}

@@ -47,6 +47,15 @@
   transition: opacity 0.3s ease;
 }
 
-.entries li:hover .del-btn {
+.del-btn:focus {
+  outline: 0;
+}
+
+.entries li.neg:hover .del-but {
   opacity: 1;
 }
+
+.entries li.pos:hover .del-but {
+  opacity: 1;
+}
+
